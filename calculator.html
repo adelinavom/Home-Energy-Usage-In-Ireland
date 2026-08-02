@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home Energy Cost Calculator</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="energyUsage.html">Energy Usage</a>
+        <a href="energySaving.html">Energy Saving</a>
+        <a href="sdg7-ireland.html">SDG 7</a>
+        <a href="statistics.html">Statistics</a>
+    </nav>
+
+    <main>
+
+        <h1>Home Energy Cost Calculator</h1>
+
+        <section>
+
+            <h2>Estimate Your Electricity Costs</h2>
+
+            <p>
+                Enter your average monthly electricity consumption and electricity
+                unit price to estimate your monthly and annual electricity costs.
+            </p>
+
+            <p>
+                This calculator provides an estimate only. Standing charges,
+                discounts and other supplier fees are not included.
+            </p>
+
+            <div class="calculator-container">
+
+                <form id="energyCalculator" novalidate>
+
+                    <div class="calculator-grid">
+
+                        <div class="form-group">
+
+                            <label for="electricityUsage">
+                                Monthly electricity consumption (kWh)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="electricityUsage"
+                                name="electricityUsage"
+                                min="0"
+                                step="0.01"
+                                placeholder="Example: 350"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="electricityPrice">
+                                Electricity unit price (€ per kWh)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="electricityPrice"
+                                name="electricityPrice"
+                                min="0"
+                                step="0.001"
+                                placeholder="Example: 0.35"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="calculator-buttons">
+
+                        <button type="submit">
+                            Calculate
+                        </button>
+
+                        <button type="reset" class="reset-button">
+                            Reset
+                        </button>
+
+                    </div>
+
+                    <div
+                        id="errorMessage"
+                        class="error-message"
+                        role="alert"
+                        aria-live="polite">
+                    </div>
+
+                    <div
+                        id="calculatorResult"
+                        class="calculator-result"
+                        aria-live="polite">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>How the Calculation Works</h2>
+
+            <p>
+                The monthly electricity cost is calculated by multiplying the
+                monthly electricity consumption by the electricity unit price.
+            </p>
+
+            <p>
+                The annual cost and annual consumption are estimated by multiplying
+                the monthly results by 12.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
