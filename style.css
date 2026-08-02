@@ -1,0 +1,356 @@
+/* SHARED CSS STYLESHEET ADELINA & KYRYLO
+ADELINA :   HOME PAGE 
+			ENERGY USAGE PAGE
+			ENERGY SAVING PAGE 
+
+KYRYLO :    */
+
+/*Adelina : the methods used I found in W3Schools CSS lessons */
+
+/* Makes padding and borders count inside an elements width*/
+
+*{ box-sizing: border-box;}
+
+/* for the whole webpage */
+
+body{
+	margin: 0;
+	padding:0 20px 40px;
+	font-family: Arial,Helvetica, sans-serif;
+	line-height: 1.6;
+	color: #24352e;
+	background: linear-gradient(to bottom, #dff3e6,#fffdf5);
+}
+main{
+	max-width: 1000px;
+	margin: 30px auto;
+	padding:30px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* navigation bar*/
+
+nav{
+	max-width: 1000px; 
+	margin: 20px auto; 
+	padding: 15px; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px; 
+	background-color: #195c42; 
+	border-radius: 12px;
+}
+
+/* navigation links*/
+
+nav a {
+	padding: 10px 16px;
+	color: white; 
+	background-color: #287a58; 
+	text-decoration: none;
+	font-weight: bold; 
+	border-radius: 8px;
+}
+
+/* changes navigation links when the mouse is over them */
+
+nav a:hover {
+	color: #195c42;
+	background-color: #f4cf64;
+}
+/* headings*/
+
+h1,h2,h3 {color: #195c42;}
+
+h1 {
+	margin-top: 30px; 
+	text-align: center; 
+	font-size: 42px;
+}
+
+h2 {
+	margin-top: 30px; 
+	padding-bottom: 8px;
+	border-bottom: 3px solid #f4cf64;
+}
+
+h3{
+	margin-top: 25px;
+}
+
+/*paragraphs*/
+
+P {
+	margin-bottom: 18px;
+}
+
+/* ordered and unordered lists */
+
+u1,ol {
+	padding: 20px 20px 20px 45px; 
+	background-color: #e8f6ed; 
+	border-left: 5px solid #287a58; 
+	border-radius: 10px;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+img {
+	display: block; 
+	max-width: 100%; 
+	height: auto;
+	margin: 25px auto; 
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+h5 {
+	padding: 15px;
+	background-color: #fff3c7; 
+	border-left: 5px solid #f4cf64; 
+	border-radius: 8px; 
+	font-size: 15px;
+}
+
+/* ========================================
+   KYRYLO: SDG 7 PAGE
+   ======================================== */
+
+.sdg-image {
+    width: 200px;
+}
+
+/* ========================================
+   KYRYLO: STATISTICS AND SURVEY PAGE
+   ======================================== */
+
+.table-container {
+    width: 100%;
+    margin: 25px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+caption {
+    margin-bottom: 12px;
+    color: #195c42;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 13px;
+    border: 1px solid #b9d8c4;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    color: #ffffff;
+    background-color: #195c42;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2faf5;
+}
+
+tbody tr:hover {
+    background-color: #e8f6ed;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 12px;
+}
+
+/* ========================================
+   KYRYLO: CALCULATOR PAGE
+   ======================================== */
+
+.calculator-container {
+    max-width: 720px;
+    margin: 25px auto;
+    padding: 28px;
+    background-color: #f7fcf8;
+    border: 1px solid #cde5d5;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: #195c42;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #8ebaa0;
+    border-radius: 7px;
+    font: inherit;
+    background-color: #ffffff;
+}
+
+.form-group input:focus {
+    outline: 3px solid rgba(244, 207, 100, 0.45);
+    border-color: #287a58;
+}
+
+button,
+.button {
+    display: inline-block;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #287a58;
+    font: inherit;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    color: #195c42;
+    background-color: #f4cf64;
+    text-decoration: none;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.reset-button {
+    color: #195c42;
+    background-color: #dfe8e2;
+}
+
+.error-message {
+    display: none;
+    margin-top: 18px;
+    padding: 12px 15px;
+    color: #8b1e1e;
+    background-color: #fde8e8;
+    border-left: 5px solid #b83232;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.error-message.visible {
+    display: block;
+}
+
+.calculator-result {
+    display: none;
+    margin-top: 22px;
+    padding: 20px;
+    background-color: #e8f6ed;
+    border-left: 5px solid #287a58;
+    border-radius: 10px;
+}
+
+.calculator-result.visible {
+    display: block;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 12px 30px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    nav a {
+        margin: 0;
+        text-align: center;
+    }
+
+    section {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    .calculator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calculator-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    main,
+    section {
+        padding: 16px;
+    }
+
+    .calculator-buttons {
+        flex-direction: column;
+    }
+
+    .calculator-buttons button {
+        width: 100%;
+    }
+}
